@@ -101,8 +101,9 @@ public class VariableMutation {
 
         String k = "Apple";
         //fill the k variable with its content 4 times
-
-
+        for (int y = 0; y < 2; y++ ) {
+            k = k + k;
+        }
         System.out.println(k);
     }
 }
