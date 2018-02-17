@@ -14,8 +14,10 @@ public class GuessTheNumber {
             numberGuess = scanner.nextInt();
             if (numberGuess < numberRandom) {
                 System.out.println("The stored number is higher!");
+                System.out.println();
             } else if (numberGuess > numberRandom) {
                 System.out.println("The stored number is lower!");
+                System.out.println();
             } else if (numberGuess == numberRandom) {
                 System.out.println("You found the number: " + numberRandom + "!");
             }

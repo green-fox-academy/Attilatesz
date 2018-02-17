@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class DrawADiagonal {
     public static void main(String[] args) {
-        System.out.println("Your Number for Diagonal: ");
+        System.out.println("Give me a number: ");
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
+        System.out.println();
         for (int column = 1; column <= userInput; column++) {
             for (int row = 1; row <= userInput; row++) {
                 if(column == row)
