@@ -9,7 +9,7 @@ public class Third {
         System.out.println(q[3]);
 
         for (int i = 0; i <= q.length; i++) {
-            
+
         }
     }
 }
