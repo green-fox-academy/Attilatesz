@@ -10,8 +10,8 @@ public class Checkerboard {
 
         int x = 0;
         int y = 0;
-        int row = 30;
-        int col = 30;
+        int row = 0;
+        int col = 0;
 
         for ( row = 0;  row < 8;  row++ ) {
             for ( col = 0;  col < 8;  col++ ) {
