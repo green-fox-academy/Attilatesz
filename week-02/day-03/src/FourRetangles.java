@@ -19,7 +19,8 @@ public class FourRetangles {
             int width = random.nextInt(100);
             int height = random.nextInt(100);
             graphics.fillRect(x, y, width, height);
-            graphics.setColor(Color.getHSBColor(random.nextInt(361), random.nextInt(100) + 80, 100));
+            graphics.setColor(Color.getHSBColor
+                    (random.nextInt(361), random.nextInt(100) + 80, 100));
         }
 
     }
