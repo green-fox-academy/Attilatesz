@@ -19,20 +19,23 @@ public class Everything {
     }
 
     private static void drawCenterLine(int x, int y, Graphics graphics) {
+        int width = WIDTH/2;
+        int height = HEIGHT/2;
+
         for (int i = 0; i < WIDTH/20; i++) {
-            graphics.drawLine(x,y,160,160);
+            graphics.drawLine(x,y,width,height);
             x+=20;
         }
         for (int i = 0; i < WIDTH/20; i++) {
-            graphics.drawLine(x, y, 160, 160);
+            graphics.drawLine(x, y, width, height);
             y += 20;
         }
         for (int i = 0; i < WIDTH/20; i++) {
-            graphics.drawLine(x, y, 160, 160);
+            graphics.drawLine(x, y, width, height);
             x -= 20;
         }
         for (int i = 0; i < WIDTH/20; i++) {
-            graphics.drawLine(x, y, 160, 160);
+            graphics.drawLine(x, y, width, height);
             y -= 20;
         }
     }
