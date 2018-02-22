@@ -50,8 +50,10 @@ public class Calculator {
         checkIfIncluded(operands, operandOneScanner);
         checkIfIncluded(operands, operandTwoScanner);
         operatorIncluded(operators, operatorPick);
+
         int result = operations(operandOneScanner, operandTwoScanner, operatorPick);
         System.out.println(result);
+
     return result;
     }
 
