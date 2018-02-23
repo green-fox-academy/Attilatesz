@@ -44,12 +44,12 @@ public class EnvelopeStar {
 
     public static void main(String[] args) {
 
-        ImagePanel imagePanel = new ImagePanel();
-        imagePanel.setBackground(Color.BLACK);
         JFrame jFrame = new JFrame("Drawing");
         jFrame.setSize(new Dimension(WIDTH, HEIGHT));
         jFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
         jFrame.add(new ImagePanel());
+        ImagePanel imagePanel = new ImagePanel();
+        imagePanel.setBackground(Color.BLACK);
         jFrame.setLocationRelativeTo(null);
         jFrame.setVisible(true);
 
