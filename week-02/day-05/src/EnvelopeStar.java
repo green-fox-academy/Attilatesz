@@ -14,12 +14,12 @@ public class EnvelopeStar {
         int dividedCoordinateWidth = WIDTH / 40;
         int dividedCoordinateHeight = HEIGHT / 40;
 
+
         for (int i = 0; i < 20; i++) {
             coordinateX += dividedCoordinateWidth;
             endcoordinateY += dividedCoordinateHeight;
             graphics.drawLine(coordinateX, coordinateY + (HEIGHT / 2), endcoordinateX, endcoordinateY);
         }
-        
         for (int i = 0; i < 20; i++) {
             coordinateX += dividedCoordinateWidth;
             endcoordinateY -= dividedCoordinateHeight;
@@ -33,9 +33,10 @@ public class EnvelopeStar {
         for (int i = 0; i < 20; i++) {
             coordinateX += dividedCoordinateWidth;
             endcoordinateY -= dividedCoordinateHeight;
-            graphics.drawLine(coordinateX -WIDTH, coordinateY, endcoordinateX - (WIDTH/2),
-                    endcoordinateY);
+            graphics.drawLine(coordinateX -(WIDTH), coordinateY, endcoordinateX - (WIDTH/2),
+                    endcoordinateY+15);
         }
+        //graphics.drawLine(0, 300,300, 300);
     }
 
     static int WIDTH = 600;
