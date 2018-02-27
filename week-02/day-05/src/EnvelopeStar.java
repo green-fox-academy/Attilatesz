@@ -34,9 +34,9 @@ public class EnvelopeStar {
             coordinateX += dividedCoordinateWidth;
             endcoordinateY -= dividedCoordinateHeight;
             graphics.drawLine(coordinateX -(WIDTH), coordinateY, endcoordinateX - (WIDTH/2),
-                    endcoordinateY+15);
+                    endcoordinateY);
         }
-        //graphics.drawLine(0, 300,300, 300);
+        graphics.drawLine(0, 300,300, 300);
     }
 
     static int WIDTH = 600;
