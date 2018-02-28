@@ -21,9 +21,8 @@ public class Dominoes {
           dominoes.add(i + 1, dominoes.get(j));
           dominoes.remove(j + 1);
         }
-      }return dominoes;
+    }return dominoes;
   }
-
 
   static List<Domino> initializeDominoes() {
     List<Domino> dominoes = new ArrayList<>();
