@@ -1,4 +1,6 @@
-public class PostIt {
+package PostIt;
+
+public class postit {
 
   String backgroundColor;
   String textOnIt;
@@ -13,7 +15,7 @@ public class PostIt {
             '}';
   }
 
-  public PostIt(String backgroundColor, String textOnIt, String textColor){
+  public postit (String backgroundColor, String textOnIt, String textColor){
       this.backgroundColor = backgroundColor;
       this.textOnIt = textOnIt;
       this.textColor = textColor;
