@@ -23,7 +23,7 @@ public class Checkerboard {
                     graphics.setColor(Color.black);
                 graphics.fillRect(x,y,30,30);
             }
-            }
+        }
     }
     // Don't touch the code below
     static int WIDTH = 300;

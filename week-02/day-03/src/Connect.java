@@ -17,7 +17,7 @@ public class Connect {
 
 
         connectLines(groupBox, graphics);
-        
+
 
     }
 
