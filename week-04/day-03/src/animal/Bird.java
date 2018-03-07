@@ -1,6 +1,6 @@
 package animal;
 
-import Vehicle.Flyable;
+import vehicle.Flyable;
 
 public class Bird extends Animal implements Flyable {
 

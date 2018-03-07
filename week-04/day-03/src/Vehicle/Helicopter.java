@@ -1,4 +1,4 @@
-package Vehicle;
+package vehicle;
 
 public class Helicopter extends Vehicle {
 

@@ -1,5 +1,5 @@
 
-package Vehicle;
+package vehicle;
 
 public abstract class Vehicle implements Flyable {
 
