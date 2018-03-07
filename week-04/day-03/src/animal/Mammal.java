@@ -7,7 +7,7 @@ public class Mammal extends Animal {
   }
 
   public String breed() {
-    String breed = "giving birth to live young.";
+    String breed = "pushing miniature versions out.";
     return breed;
   }
 }

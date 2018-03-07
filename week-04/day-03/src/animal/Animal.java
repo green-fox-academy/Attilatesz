@@ -19,7 +19,6 @@ public abstract class Animal {
     this.age = age;
     this.subSpecies = subSpecies;
     this.gender = gender;
-    breed();
 
   }
 
