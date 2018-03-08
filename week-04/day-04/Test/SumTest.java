@@ -8,11 +8,11 @@ import static org.junit.Assert.*;
 
 public class SumTest {
 
-  List<Integer>numbers = new ArrayList<>(Arrays.asList(1,2,3));
+  List<Integer>numbers = new ArrayList<>(Arrays.asList(6,5,4,8));
   Sum summer = new Sum(numbers);
 
   @Test
-  public void sum() {
-    assertEquals(6, summer.sum(numbers));
+  public void sumTest() {
+    assertEquals(23, summer.sum(numbers));
     }
   }
