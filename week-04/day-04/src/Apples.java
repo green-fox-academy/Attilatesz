@@ -1,9 +1,12 @@
 public class Apples {
-  String apple = "apple";
+  private String apple = "apple";
+
+  public Apples(String apple) {
+    this.apple = apple;
+  }
 
   public String getApple() {
 
-    System.out.println(apple);
     return apple;
 
   }
