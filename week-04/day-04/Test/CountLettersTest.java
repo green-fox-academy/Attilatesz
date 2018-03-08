@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class CountLettersTest {
   CountLetters letter = new CountLetters();
   String word = "aattii";
-  Map<Character, Integer> wordList = new HashMap<Character, Integer>();
+  Map <Character, Integer> wordList = new HashMap <Character, Integer> ();
 
   void fillMap() {
     wordList.put('a', 2);
