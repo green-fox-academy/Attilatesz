@@ -11,6 +11,6 @@
 
 ### [That's Me](https://github.com/Attilatesz/attilatesz.github.io.git)
 
-## To-do app:
+## My To-do app:
 
 ### https://github.com/Attilatesz/todo-app.git
