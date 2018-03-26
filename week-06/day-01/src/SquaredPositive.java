@@ -6,12 +6,12 @@ import java.util.Arrays;
 public class SquaredPositive {
   public static void main(String[] args) {
 
-    ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 3, -2, -4, -7, -3, -8, 12, 19, 6, 9, 10, 14));
+    ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(3, 9, 2, 8, 6, 5));
 
     numbers
             .stream()
-            .filter(n -> n > 0)
-            .map(n -> n * n + " ")
+            .filter(n -> n * n > 20)
+            .map(n -> n + " ")
             .forEach(System.out::print);
   }
 }

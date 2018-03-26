@@ -10,7 +10,7 @@ public class OddAverage {
 
     System.out.println(numbers
             .stream()
-            .filter(n -> n % 2 == 1 || n % 2 == -1)
+            .filter(n -> n % 2 != 0)
             .mapToInt(n -> n)
             .summaryStatistics()
             .getAverage());

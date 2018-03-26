@@ -9,8 +9,7 @@ public class MoreThenTwenty {
 
     numbers
             .stream()
-            .map(n -> n * n)
-            .filter(n -> n > 20)
+            .filter(n -> n * n > 20)
             .map(n -> n + " ")
             .forEach(System.out::print);
   }
