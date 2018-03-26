@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 public class Fox {
-
-
+  
   String color;
   String name;
   String type;
