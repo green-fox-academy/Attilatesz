@@ -15,7 +15,6 @@ public class FrequencyOfCharacters {
             .mapToObj(t -> Character.toString((char) t))
             .collect(Collectors.groupingBy(c -> c, Collectors.counting()))
             .forEach((k, v) -> System.out.println(k + " = " + v));
-//    frequency.forEach((k, v) -> System.out.println(k + " = " + v));
 
 
   }
