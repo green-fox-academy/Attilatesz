@@ -15,11 +15,11 @@ import java.util.List;
 public class BankAccounts {
 
   DecimalFormat decimalFormat = new DecimalFormat("0.00");
-  BankAccount Timon = new BankAccount("Timon", 1500, "Mongoose", "Insect",false);
-  BankAccount Pumba = new BankAccount("Pumba", 1000, "Boar", "Insect",false);
-  BankAccount Mufasa = new BankAccount("Mufasa", 5000, "Lion", "Zebra",true);
-  BankAccount Zordon = new BankAccount("Zordon", 500, "Lion", "Zebra",false);
-  BankAccount Simba = new BankAccount("Simba", 2000.00, "Lion", "Zebra",true);
+  BankAccount Timon = new BankAccount("Timon", 1500, "Mongoose", "Insect",false, "Good Guy");
+  BankAccount Pumba = new BankAccount("Pumba", 1000, "Boar", "Insect",false,"Good Guy");
+  BankAccount Mufasa = new BankAccount("Mufasa", 5000, "Lion", "Zebra",true,"Good Guy");
+  BankAccount Zordon = new BankAccount("Zordon", 500, "Lion", "Zebra",false,"Bad Guy");
+  BankAccount Simba = new BankAccount("Simba", 2000.00, "Lion", "Zebra",true,"Good Guy");
   List<BankAccount> bankAccounts = new ArrayList<>(Arrays.asList(Timon,Pumba,Mufasa,Zordon,Simba));
 
 

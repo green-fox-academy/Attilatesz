@@ -6,13 +6,23 @@ public class BankAccount {
   private String animalType;
   private String currency;
   private boolean isHeKing;
+  private String whatIsHe;
 
-  public BankAccount(String name, double balance, String animalType, String currency, boolean isHeKing) {
+  public BankAccount(String name, double balance, String animalType, String currency, boolean isHeKing, String whatIsHe) {
     this.name = name;
     this.balance = balance;
     this.animalType = animalType;
     this.currency = currency;
     this.isHeKing = isHeKing;
+    this.whatIsHe = whatIsHe;
+  }
+
+  public String getWhatIsHe() {
+    return whatIsHe;
+  }
+
+  public void setWhatIsHe(String whatIsHe) {
+    this.whatIsHe = whatIsHe;
   }
 
   public boolean isHeKing() {

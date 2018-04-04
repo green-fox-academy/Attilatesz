@@ -6,19 +6,26 @@
     <meta charset="utf-8" />
 </head>
 <body>
-
 <table style="width: 50%">
     <tr>
         <th>ID</th>
         <th>Is He King?(Golden)</th>
         <th>Balance</th>
         <th>Animal Type</th>
+        <th>What is He?</th>
     <tr th:each =" bankaccount, accountID : ${accounts}">
         <td th:text="${accountID.index+1}">
-        <td th:style="${bankaccount.isHeKing() == true ? 'color: gold;' : 'color: sandybrown;'}"
+        <td th:style="${bankaccount.isHeKing() == true ? 'color: gold;' : 'color: black;'}"
         th:text="${bankaccount.getName()}"></td>
         <td th:text="${bankaccount.getBalance()} + ' ' + ${bankaccount.getCurrency()}"></td>
         <td th:text="${bankaccount.getAnimalType()}"></td>
+        <td class="dropdown">
+            <button class="dropbtn">Good or Bad</button>
+            <div class="dropdown-content" style="left:0;">
+                <a href="#">Good guy</a>
+                <a href="#">Bad guy</a>
+            </div>
+        </td>
     </tr>
 </table>
 </body>
