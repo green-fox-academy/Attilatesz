@@ -1,0 +1,14 @@
+table, th, td {
+    border:1px solid goldenrod;
+    border-collapse: collapse;
+    background: saddlebrown;
+    text-align: center;
+}
+td {
+    background: #7a6f00;
+    color: sandybrown;
+}
+th {
+    color: sandybrown;
+}
+
