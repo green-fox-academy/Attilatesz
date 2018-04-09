@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <title>Main Page</title>
+</head>
+<body>
+<h1 class="centered" th:text=" 'Hello, ' + ${name}"></h1>
+    <div class="center"><img th:src="${image}"></div>
+</body>
+</html>

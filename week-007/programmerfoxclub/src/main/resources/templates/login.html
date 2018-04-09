@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="styleLogin.css" type="text/css" rel="stylesheet"/>
+    <title>Main Page</title>
+</head>
+<body>
+<div>
+    <h1>Welcome to the World of Pokemons</h1>
+    <form action="#" th:action="@{/login}" method="post">
+        <input type="text" name="username"  placeholder="Username">
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
