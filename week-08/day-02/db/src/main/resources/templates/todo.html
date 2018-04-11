@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <link href="style.css" type="text/css" rel="stylesheet"/>
     <meta charset="UTF-8">
@@ -21,10 +21,7 @@
         <td th:text="${todo.isDone()}"></td>
         <td th:text="${todo.isUrgent()}"></td>
         <td>
-            <form th:action="@{/todo/list}" th:method="delete">
-                <input type="hidden" name="id" th:value="${todo.getId()}">
-                <button type="submit" value="Submit" class="btn btn-danger">Delete</button>
-            </form>
+            <a th:href="'/todo/' + ${todo.getId()} + '/delete'">delete</a>
         </td>
     </tr>
 </table>

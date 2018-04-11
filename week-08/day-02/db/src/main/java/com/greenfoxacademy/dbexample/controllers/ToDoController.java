@@ -6,6 +6,7 @@ package com.greenfoxacademy.dbexample.controllers;
 
 import com.greenfoxacademy.dbexample.models.Todo;
 import com.greenfoxacademy.dbexample.repositories.ToDoRepository;
+import com.greenfoxacademy.dbexample.services.ToDoService;
 import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,6 +20,8 @@ public class ToDoController {
 
   @Autowired
   ToDoRepository toDoRepository;
+  @Autowired
+  ToDoService toDoService;
 
   @GetMapping(value = {"/", "/list"})
   public String list(@RequestParam(value = "isActive", required = false) boolean isDone, Model model) {
@@ -38,9 +41,9 @@ public class ToDoController {
     return "redirect:/todo/list";
   }
 
-  @RequestMapping(method = RequestMethod.DELETE)
-  public String delete(@RequestParam Long id) {
-    toDoRepository.deleteById(id);
-    return "redirect:/";
+  @GetMapping(value = "/{id}/delete")
+  public String delete(@PathVariable Long id){
+    toDoService.deleteToDo(id);
+    return "redirect:/todo/list";
   }
 }
