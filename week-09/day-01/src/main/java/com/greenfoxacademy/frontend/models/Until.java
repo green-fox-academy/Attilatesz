@@ -1,17 +1,16 @@
 package com.greenfoxacademy.frontend.models;
 
 public class Until {
-  private Integer sumNumber;
+  private Integer number;
 
-
-  public Until(Integer sumNumber) {
+  public Until(Integer number) {
   }
 
-  public Integer getSumNumber() {
-    return sumNumber;
+  public Integer getNumber() {
+    return number;
   }
 
-  public void setSumNumber(Integer sumNumber) {
-    this.sumNumber = sumNumber;
+  public void setNumber(Integer number) {
+    this.number = number;
   }
 }

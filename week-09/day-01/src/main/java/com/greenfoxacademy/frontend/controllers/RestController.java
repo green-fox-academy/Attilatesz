@@ -2,10 +2,7 @@ package com.greenfoxacademy.frontend.controllers;
 
 import com.greenfoxacademy.frontend.models.*;
 import com.greenfoxacademy.frontend.models.Appendable;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
 public class RestController {
@@ -34,10 +31,5 @@ public class RestController {
   @GetMapping(value = "/appenda/{appendable}")
   public Object appendController(@PathVariable(name = "appendable") String wordToAppend) {
     return new Appendable(wordToAppend);
-  }
-
-  @PostMapping(value = "/dountil/{sum}")
-  public Object doUntil(@PathVariable(name = "sum") Integer numberToSum) {
-    return new Until(numberToSum);
   }
 }
