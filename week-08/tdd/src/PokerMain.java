@@ -13,10 +13,10 @@ public class PokerMain {
     deckTwo.sort(Comparator.comparing(Card::getValue));
 
     if ((deckOne.get(4).getValue()) > (deckTwo.get(4).getValue())){
-      System.out.println("Black wins! - (High Card :" + convertIntValue(deckOne.get(4).getValue()) + ")");
+      System.out.println("Black wins! - (High Card: " + convertIntValue(deckOne.get(4).getValue()) + ")");
       return deckOne.get(4);
     }
-    System.out.println("White wins! - (High Card : " + convertIntValue(deckTwo.get(4).getValue()) + ")");
+    System.out.println("White wins! - (High Card: " + convertIntValue(deckTwo.get(4).getValue()) + ")");
     return deckTwo.get(4);
   }
 
@@ -52,21 +52,21 @@ public class PokerMain {
         return getTwoPairsWhiteResult(deckTwoFiltered);
     }
     if ((int)deckOneFiltered.get(0) > (int)deckTwoFiltered.get(0)){
-      System.out.println("Black wins! - (Pair : " + convertIntValue((int)deckOneFiltered.get(0)) + ")");
+      System.out.println("Black wins! - (Pair: " + convertIntValue((int)deckOneFiltered.get(0)) + ")");
       return convertIntValue((int)deckOneFiltered.get(0));
     }
-    System.out.println("White wins! - (Pair : " + convertIntValue((int)deckTwoFiltered.get(0)) + ")");
+    System.out.println("White wins! - (Pair: " + convertIntValue((int)deckTwoFiltered.get(0)) + ")");
     return convertIntValue((int)deckTwoFiltered.get(0));
   }
 
   private String getTwoPairsBlackResult(List deckOneFiltered){
     String resultBlack = convertIntValue((int) deckOneFiltered.get(0)) + convertIntValue((int) deckOneFiltered.get(1));
-    System.out.println("Black wins! - (Pair : " + resultBlack + ")");
+    System.out.println("Black wins! - (Pair: " + resultBlack + ")");
     return resultBlack;
   }
   private String getTwoPairsWhiteResult(List deckTwoFiltered){
     String resultWhite = convertIntValue((int) deckTwoFiltered.get(0)) + convertIntValue((int) deckTwoFiltered.get(1));
-    System.out.println("White wins! - (Pair : " + resultWhite + ")");
+    System.out.println("White wins! - (Pair: " + resultWhite + ")");
     return resultWhite;
   }
 

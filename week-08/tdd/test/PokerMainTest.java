@@ -16,17 +16,17 @@ public class PokerMainTest {
     List<Card> deckOne = new ArrayList<>(Arrays.asList(
             //Black: 2H 3D 5S 9C KD White: 2C 3H 4S 8C AH
             new Card("2", "H"),
-            new Card("5", "D"),
-            new Card("5", "S"),
+            new Card("6", "D"),
+            new Card("6", "S"),
             new Card("K", "C"),
             new Card("K", "D")
     ));
 
     List<Card> deckTwo = new ArrayList<>(Arrays.asList(
-            new Card("4", "C"),
+            new Card("A", "C"),
             new Card("3", "H"),
             new Card("4", "S"),
-            new Card("A", "C"),
+            new Card("4", "C"),
             new Card("A", "H")
     ));
 
