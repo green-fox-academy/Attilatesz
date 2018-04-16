@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>List of Assignees</title>
+</head>
+<body>
+<div class="alert alert-secondary" role="alert">
+    <h1 class="text-center">List of Assignees</h1>
+</div>
+<div class="col-md-12">
+    <div class="font-weight-bold">
+        <div class="text-center">
+            <table class="table table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+                <tr th:each="ass : ${assignees}">
+                    <td th:text="${ass.getName()}"></td>
+                    <td th:text="${ass.getEmail()}"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--<form action="#" th:action="@{/todo/assignee}" method="post">-->
+    <!--<select>-->
+        <!--<option style="display:none"></option>-->
+        <!--<option th:each="assignee : ${assignees}"-->
+                <!--th:value="${assignee.getName()}"-->
+                <!--th:text="${assignee.getName()}"-->
+                <!--name="name">-->
+        <!--</option>-->
+    <!--</select>-->
+    <!--<select>-->
+        <!--<option style="display:none"></option>-->
+        <!--<option th:each="todo : ${todolist}"-->
+                <!--th:value="${todo.getId()}"-->
+                <!--th:text="${todo.getTitle()}"-->
+                <!--name="id">-->
+        <!--</option>-->
+    <!--</select>-->
+    <!--<input type="submit" value="Submit" class="btn btn-secondary"/>-->
+<!--</form>-->
+<div class="text-center">
+    <a href="/todo/assignee/add" type="button" class="btn btn-secondary">Add new assignee</a>
+    <a th:href="'/todo/'" type="button" class="btn btn-dark">Back</a>
+</div>
+</body>
+</html>

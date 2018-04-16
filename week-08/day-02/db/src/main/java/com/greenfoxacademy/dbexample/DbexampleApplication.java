@@ -1,6 +1,5 @@
 package com.greenfoxacademy.dbexample;
 
-import com.greenfoxacademy.dbexample.models.Todo;
 import com.greenfoxacademy.dbexample.repositories.ToDoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;

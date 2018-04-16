@@ -1,11 +1,6 @@
 package com.greenfoxacademy.dbexample.models;
 
-//Add a Todo class with the fields(id:Long, title:String, urgent:boolean(default false), done:boolean(default false))
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Todo {
@@ -17,12 +12,25 @@ public class Todo {
   private boolean urgent;
   private boolean done;
 
+  @ManyToOne
+  @JoinColumn(name = "name")
+  private Assignee assignee;
+
   public Todo(String title) {
     this.title = title;
 
   }
 
   public Todo() {
+  }
+
+
+  public Assignee getAssignee() {
+    return assignee;
+  }
+
+  public void setAssignee(Assignee assignee) {
+    this.assignee = assignee;
   }
 
   public Long getId() {

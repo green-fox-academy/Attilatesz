@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Add new assignee</title>
+</head>
+<body>
+<form action="#" th:action="@{/todo/assignee/add}" method="post">
+    <div class="alert alert-secondary" role="alert">
+        <h1> Add new assignee: </h1>
+        <label for="assignee"></label>
+        <p>Name: <input type="text" id="assignee" name="assignee"/></p>
+        <p>Email: <input type="email" id="email" name="email"/></p>
+        <p>
+            <input type="submit" value="Submit" class="btn btn-secondary"/>
+            <a th:href="'/todo/assignee'" type="button" class="btn btn-dark">Back</a>
+        </p>
+    </div>
+</form>
+</body>
+</html>
