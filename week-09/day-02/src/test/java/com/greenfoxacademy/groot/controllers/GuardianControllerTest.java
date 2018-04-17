@@ -69,5 +69,4 @@ public class GuardianControllerTest {
                     .contentType(MediaType.APPLICATION_JSON))
                     .andExpect(status().isBadRequest());
   }
-
 }
