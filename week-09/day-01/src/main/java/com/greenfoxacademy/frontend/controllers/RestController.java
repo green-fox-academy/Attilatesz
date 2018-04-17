@@ -2,6 +2,8 @@ package com.greenfoxacademy.frontend.controllers;
 
 import com.greenfoxacademy.frontend.models.*;
 import com.greenfoxacademy.frontend.models.Appendable;
+import com.greenfoxacademy.frontend.service.DoUntilService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @org.springframework.web.bind.annotation.RestController
@@ -31,5 +33,17 @@ public class RestController {
   @GetMapping(value = "/appenda/{appendable}")
   public Object appendController(@PathVariable(name = "appendable") String wordToAppend) {
     return new Appendable(wordToAppend);
+  }
+
+  @Autowired
+  private DoUntilService doUntilService;
+
+  @PostMapping("/dountil/{what}")
+  public Object doUntil(@RequestBody(required = false) DoUntilRequest doUntilRequest, @PathVariable(name = "what") String actionName) {
+    if (doUntilRequest == null) {
+      return new ErrorModel("Please provide a number!");
+    } else {
+      return doUntilService.handleRequest(doUntilRequest, actionName);
+    }
   }
 }
